@@ -14,12 +14,12 @@ class MemeActivity2 : AppCompatActivity() {
         tvPrevious=findViewById(R.id.tvPrevious)
         tvNextview=findViewById(R.id.tvNextview)
         tvPrevious.setOnClickListener {
-            intent= Intent(this,MainActivity::class.java)
+            val intent= Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
 
         tvNextview.setOnClickListener {
-            intent=Intent(this,Meme3Activity::class.java)
+            val intent=Intent(this,Meme3Activity::class.java)
             startActivity(intent)
         }
     }
